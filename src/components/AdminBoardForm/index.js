@@ -23,6 +23,8 @@ import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 
 import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
+import Timings from "../timings";
+import TimePicker from "react-time-picker";
 // import { IconButton, makeStyles } from "@material-ui/core";
 
 
@@ -861,12 +863,13 @@ const AdminBoardForm = (props) => {
         </div>
         {/*  */}
         <div className="heading-section">
-          <label className="label">Timings :</label>
+          <label className="label">Timings : </label>
           <div className="input-section ">
             <div className="time-section-cont">
               <div className="time-section">
                 <label className="label-input-time">Opening Time :</label>
-                <div className="time-input-cont">
+               <div className="time-input-cont">
+              
                 <input
                   style={{
                     border:"none"
@@ -878,7 +881,7 @@ const AdminBoardForm = (props) => {
                   onChange={handleChange}
                   required
                   readOnly={isReadOnly}
-                />
+                /> 
                 <div style={{display:'flex',flexDirection:'column'}} >
 
                 <div className="arrow-button" onClick={incrementTime}><KeyboardArrowUpIcon fontSize="small" /></div>
@@ -934,9 +937,9 @@ const AdminBoardForm = (props) => {
                 />
                               <div style={{display:'flex',flexDirection:'column'}} >
 
-<div className="arrow-button" onClick={incrementTime}><KeyboardArrowUpIcon fontSize="small" /></div>
-<div className="arrow-button" onClick={decrementTime}><KeyboardArrowDownIcon fontSize="small" marginBottom='none' marginTop='0px' paddingTop='0px' /></div>
-</div></div>
+              <div className="arrow-button" onClick={incrementTime}><KeyboardArrowUpIcon fontSize="small" /></div>
+              <div className="arrow-button" onClick={decrementTime}><KeyboardArrowDownIcon fontSize="small" marginBottom='none' marginTop='0px' paddingTop='0px' /></div>
+              </div></div>
               </div>
               <div className="time-section">
                 <label className="label-input-time">Lunch End Time :</label>
