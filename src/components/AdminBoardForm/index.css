@@ -130,11 +130,16 @@ input {
   padding-left: 10px;
   padding-right: 10px;
 }
-.del-btn{
+.del{
   background-color: black;
-  mix-blend-mode: multiply;
   color: #ccbb8e;
-  background: none;
+  border: none !important;
+  outline: none !important;
+}
+.del-btn{
+
+  color: #ccbb8e;
+
 }
 .add{
   background-color: black;

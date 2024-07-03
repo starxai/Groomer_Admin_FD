@@ -1059,8 +1059,8 @@ const AdminBoardForm = (props) => {
                         readOnly={isReadOnly}
                       />
                     </div>
-                    <button type="button" onClick={() => removeService(index)}>
-                     <div> <DeleteOutlineIcon style={{background:'none',mixBlendMode:'multiply'}} className="del-btn" /></div>
+                    <button type="button" className="del" onClick={() => removeService(index)}>
+                     <div> <DeleteOutlineIcon style={{background:'none'}} className="del-btn" /></div>
                     </button>
                   </div>
                 ))}
@@ -1095,8 +1095,8 @@ const AdminBoardForm = (props) => {
                       readOnly={isReadOnly}
                     />
                   </div>
-                  <button type="button" onClick={() => removeService(index)}>
-                      <DeleteIcon className="del-btn" />
+                  <button type="button" className="del" onClick={() => removeService(index)}>
+                      <DeleteIcon className="del-btn" style={{background:'none'}} />
 
                     </button>
 
@@ -1115,7 +1115,7 @@ const AdminBoardForm = (props) => {
                       readOnly={isReadOnly}
                     />
                   </div>
-                  <button type="button" onClick={() => removeService(index)}>
+                  <button type="button" className="del" onClick={() => removeService(index)}>
                       <DeleteIcon className="del-btn" />
                     </button>
                 </div>
@@ -1153,7 +1153,7 @@ const AdminBoardForm = (props) => {
                     </div>
                     <button
                       type="button"
-                      onClick={() => removeComboService(index)}
+                      onClick={() => removeComboService(index)} className="del"
                     >
                       <DeleteIcon className="del-btn" />
                     </button>
@@ -1234,8 +1234,8 @@ const AdminBoardForm = (props) => {
                       {key}
                     </label>
                     <button
-                      className="delete-button" 
-                      onClick={() => handleDeleteFeature(key)}
+                      className="delete-button del" 
+                      onClick={() => handleDeleteFeature(key)} 
                     >
                       <DeleteIcon  background='none' />
                     </button>
